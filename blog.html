@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Blog</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Vintage</div>
+    </header>
+
+    <nav>
+        <a class="item" href="index.html">Home</a>
+        <a class="item" href="portfolio.html">Portfolio</a>
+        <a class="item" href="#">Blog</a>
+        <a class="item" href="form.html">Formulier</a>
+    </nav>
+
+    <main class="blog">
+        <h1 class="title">Blog</h1>
+        <article>
+            <h2>Vintage, Retro of Antiek</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent aliquam mollis nunc, ac ullamcorper mi eleifend vel.
+                Aliquam eleifend accumsan pretium. Aenean accumsan sodales purus,
+                <spam id="dots">...</spam>
+                <span id="more">
+                    ut dictum ante.
+                    Nulla facilisi. Fusce quam nibh, aliquet nec ultrices vel, aliquam sit amet justo.
+                    Vivamus euismod, lectus ac molestie euismod, nibh mauris placerat sem, vel fringilla purus est non
+                    turpis.
+                    Etiam dapibus varius nisi, nec scelerisque libero accumsan in.
+                    Nullam faucibus, purus ac ornare viverra, ex mauris porttitor est, ut luctus libero erat ut augue.
+                </span>
+            </p>
+            <p>
+                <button onclick="myFunction()" id="myBtn">Lees meer</button>
+            </p>
+        </article>
+        <article>
+            <h2>Insturen</h2>
+            <p>Stuur hier je mooiste foto van je vintage spullen in.</p>
+            <form name="upload" method="POST" data-netlify="true" id="upload">
+                <p>
+                    <label>Naam: <input type="text" name="naam: " /></label>
+                </p>
+                <p>
+                    <label>Email: <input type="email" name="email: " /></label>
+                </p>
+                <p>
+                    <label>Upload je foto: <input type="file" name="Upload: " /></label>
+                </p>
+                <p>
+                    <input type="reset">
+                    <input type="submit" form="upload">
+                </p>
+            </form>
+        </article>
+        <article>
+            <h2>Pol</h2>
+            <p>Waar gaat jouw voorkeur naar uit?</p>
+            <form name="pol" method="POST" data-netlify="true" id="pol">
+                <p>
+                    <label>Jouw voorkeur:
+                        <p><input type="radio" name="Voorkeur: " value="Vintage" /> Vintage</p>
+                        <p><input type="radio" name="Voorkeur: " value="Retro" /> Retro</p>
+                        <p><input type="radio" name="Voorkeur: " value="Antiek" /> Antiek</p>
+                    </label>
+                </p>
+                <p>
+                    <input type="submit" form="pol">
+                </p>
+            </form>
+        </article>
+        <article>
+            <h2>Vintage Jazz</h2>
+            <p>Voor de liefhebber.</p>
+            <iframe width="300" height="250" src="https://www.youtube.com/embed/PpJYc93QaS4?autoplay=1">
+            </iframe>
+        </article>
+    </main>
+
+    <footer>
+        <a class="fab fa-facebook" href="#"></a>
+        <a class="fab fa-instagram" href="#"></a>
+        <a class="fab fa-pinterest" href="#"></a>
+        <a class="fab fa-youtube" href="#"></a>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Lees meer";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Lees minder";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

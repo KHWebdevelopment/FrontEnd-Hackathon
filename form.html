@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Formulier</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Vintage</div>
+    </header>
+
+    <nav>
+        <a class="item" href="index.html">Home</a>
+        <a class="item" href="portfolio.html">Portfolio</a>
+        <a class="item" href="blog.html">Blog</a>
+        <a class="item" href="#">Formulier</a>
+    </nav>
+
+    <main>
+        <h1 class="title">Formulier</h1>
+        <div class="form">
+            <form name="formulier" method="POST" data-netlify="true" id="form">
+                <p>
+                    <label>Voornaam: <input type="text" name="voornaam: " /></label>
+                    <label>Achternaam: <input type="text" name="achternaam: " /></label>
+                </p>
+                <p>
+                    <label>Email: <input type="email" name="email: " /></label>
+                </p>
+                <p>
+                    <label>Telefoonnummer: <input type="tel" name="telefoonnummer: " /></label>
+                </p>
+                <p>
+                    <label>Datum: <input type="date" name="Datum: " /></label>
+                </p>
+                <p>
+                    <label>Tijd: <input type="time" name="Tijd: " /></label>
+                </p>
+                <p>
+                    <label>Kies kleur: <input type="color" name="Kleur: " /></label>
+                </p>
+                <p>
+                    <label>Type je url: <input type="url" name="Url: " /></label>
+                </p>
+                <p>
+                    <label>optie 1: <input type="checkbox" name="optie_1: " /></label>
+                    <label>optie 2: <input type="checkbox" name="optie_2: " /></label>
+                    <label>optie 3: <input type="checkbox" name="optie_3: " /></label>
+                </p>
+                <p>
+                    <label>Afbeelding: <input type="image" src="images/radio.jpg" alt="Submit" width="100"
+                            height="100"></label>
+                </p>
+                <p>
+                    <label>Radiobutton:
+                        <p><input type="radio" name="Radiobutton: " value="Optie 1" /> Optie 1</p>
+                        <p><input type="radio" name="Radiobutton: " value="Optie 2" /> Optie 2</p>
+                        <p><input type="radio" name="Radiobutton: " value="Optie 3" /> Optie 3</p>
+                    </label>
+                </p>
+                <p>
+                    <label>Nummer: <input type="number" name="Nummer: " />
+                    </label>
+                </p>
+                <p>
+                    <input type="reset">
+                    <input type="submit" form="form">
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a class="fab fa-facebook" href="#"></a>
+        <a class="fab fa-instagram" href="#"></a>
+        <a class="fab fa-pinterest" href="#"></a>
+        <a class="fab fa-youtube" href="#"></a>
+    </footer>
+
+
+</body>
+
+</html>
